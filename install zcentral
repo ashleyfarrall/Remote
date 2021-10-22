@@ -1,0 +1,23 @@
+  tar -xvf ZCentral_RB_20.2.1_Lnx_Sender_Receiver_M39125-004.tar.gz
+  tar -xvf ubuntu/sender/rg_install_sender_deb.tar.gz
+  wget http://ftp.uk.debian.org/debian/pool/main/x/xcb-util/libxcb-util1_0.4.0-1%2Bb1_amd64.deb
+  cp -p /etc/os-release /etc/os-release.orig
+  echo "" > /etc/os-release
+  vi /etc/os-release
+  apt install libxcb-damage0 libxcb-xtest0 libxcb-composite0 libxcb-ewmh2 libxcb-xinput0
+  dpkg -i libxcb-util1_0.4.0-1+b1_amd64.deb
+  dpkg -i rgsender_20.2.1.8637_amd64.deb
+  
+  
+NAME="Ubuntu"
+VERSION="20.04.2 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.2 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
