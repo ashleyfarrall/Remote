@@ -1,6 +1,6 @@
 #/bin/bash
 
-declare -i logouttime=3600000
+declare -i logouttime=900000
 user=$(ps aux | grep gnome-session |  awk '{print $1}' | egrep '(^[0-9])' | head -n 1)
 display=$(w | grep $user | awk '{print $2}')
 uid=$(id -u $user)
